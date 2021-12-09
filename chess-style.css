@@ -1,0 +1,80 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 1rem;
+    height: 100%;
+    width: 100%;
+}
+
+.chessboard {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    border: 16px solid black;
+    padding: 0 15px 0 15px;
+}
+
+.row {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.cell {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+.row:nth-child(odd) > .cell:nth-child(even) {
+    background-color: #d18a46;
+  }
+
+.row:nth-child(even) > .cell:nth-child(odd) {
+    background-color: #d18a46;
+}
+
+.row:nth-child(odd) > .cell:nth-child(even):hover {
+    background-color: cadetblue;
+  }
+
+.row:nth-child(even) > .cell:nth-child(odd):hover {
+    background-color: cadetblue;
+}
+
+.cell:hover {
+    background: cadetblue;
+    cursor: pointer;
+}
+
+.pawn-r, .rook-r, .knight-r, .bishop-r, .queen-r, .king-r {
+    color: red;
+}
+
+.pawn-b, .rook-b, .knight-b, .bishop-b, .queen-b, .king-b {
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
